@@ -1,0 +1,13 @@
+{
+  "version": "4.0.1",
+  "revision": "40110",
+  "addons": [
+    "build",
+    "debian",
+    "docker",
+    "filestore",
+    "filtered-resources",
+    "yum"
+  ],
+  "license": "fb870be54fd3f605fa1e5f036052ca800dd5bac5b"
+}

@@ -14,7 +14,7 @@ package main
 import (
 	"fmt"
 
-	artifactory "github.com/lusis/go-artifactory/src/artifactory.v401"
+	artifactory "github.com/ttekin/go-artifactory/src/artifactory.v401"
 )
 
 func main() {
@@ -36,7 +36,7 @@ func main() {
 
 ### bundled utilities
 ```
-git clone https://github.com/lusis/go-artifactory.git
+git clone https://github.com/ttekin/go-artifactory.git
 cd go-artifactory
 make all
 ARTIFACTORY_URL=https://artifactory.domain.com/artifactory ARTIFACTORY_USERNAME=foo ARTIFACTORY_PASSWORD=bar bin/artif-list-repos
