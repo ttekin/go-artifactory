@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	artifactory "artifactory.v401"
+	artifactory "github.com/ttekin/go-artifactory/src/artifactory.v401"
 )
 
 func main() {

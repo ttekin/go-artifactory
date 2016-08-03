@@ -1,5 +1,5 @@
 # go-artifactory
-[![Build Status](https://travis-ci.org/lusis/go-artifactory.svg?branch=master)](https://travis-ci.org/lusis/go-artifactory)
+[![Build Status](https://travis-ci.org/ttekin/go-artifactory.svg?branch=master)](https://travis-ci.org/ttekin/go-artifactory)
 Go library and utilities for interacting with [Artifactory](http://jfrog.com)
 
 ## Usage

@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 	"net/http"
-	"go.riotgames.com/telemetry-engineering/germes-utils/Godeps/_workspace/src/github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestHTTP(t *testing.T) {

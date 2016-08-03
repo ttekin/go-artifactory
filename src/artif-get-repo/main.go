@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	artifactory "artifactory.v401"
+	artifactory "github.com/ttekin/go-artifactory/src/artifactory.v401"
 	"github.com/olekukonko/tablewriter"
 )
 
