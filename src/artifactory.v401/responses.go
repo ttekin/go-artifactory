@@ -1,6 +1,6 @@
 package artifactory
 
-type GavcSearchResults struct {
+type SearchResults struct {
 	Results []FileInfo `json:"results"`
 }
 
