@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"crypto/sha1"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -75,14 +74,9 @@ func (c *ArtifactoryClient) makeRequest(method string, path string, options map[
 			var ej ErrorsJson
 			uerr := json.Unmarshal(data, &ej)
 			if uerr != nil {
-				emsg := fmt.Sprintf("Non-2xx code returned: %d. Message follows:\n%s", r.StatusCode, string(data))
-				return data, errors.New(emsg)
+				return data, &ArtifactoryHTTPError{HttpStatus:r.StatusCode, Body: data}
 			} else {
-				var emsgs []string
-				for _, i := range ej.Errors {
-					emsgs = append(emsgs, i.Message)
-				}
-				return data, errors.New(strings.Join(emsgs, "\n"))
+				return data, &ArtifactoryHTTPError{HttpStatus:r.StatusCode, Body: data, Errors: ej}
 			}
 		} else {
 			return data, err
